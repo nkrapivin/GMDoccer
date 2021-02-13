@@ -1,0 +1,2183 @@
+-- GMDoccer by nkrapivindev
+action_inherited.gml: {
+/// @description (Old DnD) - perform the inherited event
+}
+action_kill_object.gml: {
+/// @description (Old DnD) - destroy the self object
+}
+background_add.gml: {
+/// @description Adds an image from a file to the set of background resources.
+/// @param fname The name (string) of the file to add.
+/// @param removeback Indicates whether to make all pixels with the selected colour (left-bottom pixel) transparent.
+/// @param smooth Indicates whether to smooth the edges if transparent.
+/// @returns {number} resource name for the new background
+}
+background_assign.gml: {
+/// @description Assigns one background to another background index.
+/// @param index The index of the background to be copied to (ie: over-written).
+/// @param background The background to be copied from.
+/// @returns
+}
+background_create_from_surface.gml: {
+/// @description Creates a background by copying an area from a surface.
+/// @param index The index of the surface to create from.
+/// @param x The x position to copy from.
+/// @param y The y position to copy from.
+/// @param w The width of the area to be copied (from the x position).
+/// @param h The height of the area to be copied (from the y position).
+/// @param removeback Indicates whether to make all pixels with the same colour (left-bottom pixel) transparent.
+/// @param smooth Indicates whether to smooth the edges.
+/// @returns {number} resource name for the new background
+}
+background_delete.gml: {
+/// @description Deletes the background from memory, freeing the memory used.
+/// @param index The index of the background to be deleted.
+/// @returns 
+}
+background_duplicate.gml: {
+/// @description Creates a duplicate of the background with the given index.
+/// @param index The index of the background to duplicate.
+/// @returns {number} resource name for the new background
+}
+background_exists.gml: {
+/// @description Determines whether a background exists or not.
+/// @param index The index of the background to check.
+/// @returns {boolean} whether the background exists or not
+}
+background_get_height.gml: {
+/// @description Finds the height of a background.
+/// @param index The index of the background to find the height of.
+/// @returns {number} the height of the background
+}
+background_get_width.gml: {
+/// @description Finds the width of a background.
+/// @param index The index of the background to find the width of.
+/// @returns {number} the width of the background
+}
+background_prefetch.gml: {
+/// @description Prefetches the specified background
+/// @param back The index of the background to prefetch.
+/// @returns 
+}
+draw_background.gml: {
+/// @description Draw a background without colour blending or transparency
+/// @param back The index of the background to draw.
+/// @param x The x coordinate of where to draw the background.
+/// @param y The y coordinate of where to draw the background.
+/// @returns 
+}
+draw_background_ext.gml: {
+/// @description Draws a background at a given position, with customizable scaling, rotation, blend and alpha.
+/// @param back The index of the background to draw.
+/// @param x The x coordinate of where to draw the background.
+/// @param y The y coordinate of where to draw the background.
+/// @param xscale The horizontal scaling of the background.
+/// @param yscale The vertical scaling of the background.
+/// @param rot The rotation of the background.
+/// @param colour The colour with which to blend the background (use -1 or c_white to display it normally).
+/// @param alpha  The alpha of the background (from 0 to 1 where 0 is transparent and 1 opaque). 
+/// @returns 
+}
+draw_background_part.gml: {
+/// @description Draws part of a background at a given position.
+/// @param back The index of the background to draw.
+/// @param left The x position on the background of the top left corner of the area to draw.
+/// @param top  The y position on the background of the top left corner of the area to draw.
+/// @param width  The width of the area to draw.
+/// @param height  The height of the area to draw.
+/// @param x The x coordinate of where to draw the background.
+/// @param y The y coordinate of where to draw the background.
+/// @returns 
+}
+draw_background_part_ext.gml: {
+/// @description Draws part of a background at a given position with scaling, blending and alpha options.
+/// @param back The index of the background to draw.
+/// @param left The x position on the background of the top left corner of the area to draw.
+/// @param top  The y position on the background of the top left corner of the area to draw.
+/// @param width  The width of the area to draw.
+/// @param height  The height of the area to draw.
+/// @param x The x coordinate of where to draw the background.
+/// @param y The y coordinate of where to draw the background.
+/// @param xscale  The horizontal scaling of the background.
+/// @param yscale  The vertical scaling of the background.
+/// @param colour   The colour with which to blend the background (use -1 or c_white to display it normally). 
+/// @param alpha  The alpha of the background (from 0 to 1 where 0 is transparent and 1 opaque).
+/// @returns 
+}
+draw_background_tiled.gml: {
+/// @description Draws a background at a given position, and tiles it to fill the entire view.
+/// @param back The index of the background to draw.
+/// @param x The x coordinate of where to draw the background.
+/// @param y The y coordinate of where to draw the background.
+/// @returns 
+}
+draw_background_tiled_ext.gml: {
+/// @description Draws a background at a given position with scaling, blending and alpha, and tiles it to fill the entire view.
+/// @param back The index of the background to draw.
+/// @param x The x coordinate of where to draw the background.
+/// @param y The y coordinate of where to draw the background.
+/// @param xscale The horizontal scaling of the background.
+/// @param yscale The vertical scaling of the background.
+/// @param colour The colour with which to blend the background (use -1 or c_white to display it normally).
+/// @param alpha The alpha of the background (from 0 to 1 where 0 is transparent and 1 opaque).
+/// @returns 
+}
+draw_set_blend_mode.gml: {
+/// @description Sets the blend mode for drawing.
+/// @param mode The blend mode constant to set to 
+}
+draw_set_blend_mode_ext.gml: {
+/// @description Sets an extended blend mode for drawing.
+/// @param src Source blend mode
+/// @param dest Destination blend mode
+}
+draw_set_colour_write_enable.gml: {
+/// @description Sets the blend mode for drawing.
+/// @param mode The blend mode constant to set to 
+}
+instance_create.gml: {
+/// @description Creates an instance of a given object at a given position.
+/// @param x The x position the object will be created at.
+/// @param y The y position the object will be created at.
+/// @param obj The object to create an instance of.
+}
+joystick_axes.gml: {
+/// @description Returns the number of axes the joystick has.
+/// @param id	the id of the joystick (1 or 2)
+}
+joystick_buttons.gml: {
+/// @description Returns the number of buttons the joystick has.
+/// @param id	the id of the joystick (1 or 2)
+}
+joystick_check_button.gml: {
+/// @description Checks to see if a joystick button has been pressed.
+/// @param id	the id of the joystick (1 or 2)
+/// @param numb The number of the button to check (from 1 to 32).
+/// @return {Boolean} true if selected button pressed / false otherwise
+}
+joystick_exists.gml: {
+/// @description Checks for a joystick.
+/// @param id	the id of the joystick (1 or 2)
+/// @return  {Boolean} true if a joystick/gamepad with the given id is connected or false if it is not
+}
+joystick_has_pov.gml: {
+/// @description Checks the point of view capabilities of the joystick.
+/// @param id	the id of the joystick (1 or 2)
+/// @return  {Boolean} true if the joystick/gamepad with the given id has point of view capabilities or false if it does not
+}
+joystick_pov.gml: {
+/// @description Returns the name of the joystick.
+/// @param id	the id of the joystick (1 or 2)
+/// @return {Number} the point-of view position of the joystick/gamepad with the given id. This is an angle between 0 and 360 degrees, where 0 is forwards, 90 to the right, 180 backwards and 270 to the left
+}
+joystick_process_events.gml: {
+/// @description Process joystick events (since the Runner no longer processes them directly)
+}
+joystick_rpos.gml: {
+/// @description Returns the position of the r-axis of joystick.
+/// @param id	the id of the joystick (1 or 2)
+/// @return {Number} the position of the r-axis of the joystick/gamepad with the given id, with the value being somewhere between -1 and 1
+}
+joystick_upos.gml: {
+/// @description Returns the position of the u-axis of joystick.
+/// @param id	the id of the joystick (1 or 2)
+/// @return {Number} the position of the u-axis of the joystick/gamepad with the given id, with the value being somewhere between -1 and 1
+}
+joystick_vpos.gml: {
+/// @description Returns the position of the v-axis of joystick.
+/// @param id	the id of the joystick (1 or 2)
+/// @return {Number} the position of the v-axis of the joystick/gamepad with the given id, with the value being somewhere between -1 and 1
+}
+joystick_xpos.gml: {
+/// @description Returns the position of the x-axis of joystick.
+/// @param id	the id of the joystick (1 or 2)
+/// @return {Number} the position of the x-axis of the joystick/gamepad with the given id, with the value being somewhere between -1 and 1
+}
+joystick_ypos.gml: {
+/// @description Returns the position of the yx-axis of joystick.
+/// @param id	the id of the joystick (1 or 2)
+/// @return {Number} the position of the y-axis of the joystick/gamepad with the given id, with the value being somewhere between -1 and 1
+}
+joystick_zpos.gml: {
+/// @description Returns the position of the z-axis of joystick.
+/// @param id	the id of the joystick (1 or 2)
+/// @return {Number} the position of the z-axis of the joystick/gamepad with the given id, with the value being somewhere between -1 and 1
+}
+object_get_depth.gml: {
+/// @description Returns the depth of the specified object.
+/// @param {Number} obj The index of the object to check
+/// @return {Number} depth of the object
+}
+texture_set_interpolation.gml: {
+}
+texture_set_interpolation_ext.gml: {
+}
+tile_add.gml: {
+/// @description Adds a new tile to the room, allowing customisation of its attributes, and returning its index.
+/// @param background The background asset from which the new tile will be extracted.
+/// @param left The x coordinate of the left of the new tile, relative to the background asset's top left corner.
+/// @param top The y coordinate of the top of the new tile, relative to the background assets top left corner.
+/// @param width The width of the tile.
+/// @param height The height of the tile.
+/// @param x The x position in the room to place the tile.
+/// @param y The y position in the room to place the tile.
+/// @param depth The depth at which to place the tile.
+/// @returns {number} resource name for the new tile
+}
+tile_delete.gml: {
+/// @description Deletes a given tile in the room.
+/// @param index The index of the tile to delete.
+/// @returns
+}
+tile_exists.gml: {
+/// @description Checks if a given tile exists in the room.
+/// @param index The index of the tile to check for.
+/// @returns {boolean} whether the tile exists
+}
+tile_get_background.gml: {
+/// @description Returns the background index a given tile is drawn from.
+/// @param index The index of the tile.
+/// @returns {number} The background index
+}
+tile_get_ids_at_depth.gml: {
+/// @description Returns an array containing the unique ID values for all tiles at a given depth.
+/// @param depth The depth of the tile _dlayer to get the IDs of.
+/// @returns {array} IDs of all tiles of the specified depth in the room
+}
+tile_layer_delete.gml: {
+/// @description Deletes all tiles at the indicated depth _dlayer.
+/// @param depth The depth of tiles which is to be deleted.
+/// @returns 
+}
+tile_layer_delete_at.gml: {
+/// @description Deletes the tile(s) at a given depth and position.
+/// @param depth The depth of a tile to be deleted.
+/// @param x The x position at which to delete a tile.
+/// @param y The y position at which to delete a tile.
+/// @returns 
+}
+tile_layer_find.gml: {
+/// @description Returns the id of a tile at a given depth and position.
+/// @param depth The depth of the tile to be found.
+/// @param x The x position to check.
+/// @param y The y position to check.
+/// @returns 
+}
+tile_layer_hide.gml: {
+/// @description Hides all tiles at the indicated depth _dlayer.
+/// @param depth The depth of tiles which is to be hidden.
+/// @returns 
+}
+tile_layer_shift.gml: {
+/// @description Shifts all tiles at the indicated depth _dlayer by a given amount.
+/// @param depth The depth of tiles which is to be shifted.
+/// @param x The amount to shift over the x-axis.
+/// @param y The amount to shift over the y-axis.
+/// @returns 
+}
+tile_layer_show.gml: {
+/// @description Shows all tiles at the indicated depth _dlayer.
+/// @param depth The depth of tiles which is to be shown.
+/// @returns 
+}
+tile_set_alpha.gml: {
+/// @description Sets a tile's alpha (transparency).
+/// @param index The index of the tile.
+/// @param alpha The transparency of the tile.
+/// @returns 
+}
+tile_set_scale.gml: {
+/// @description Sets a tile's horizontal and vertical scaling.
+/// @param index The index of the tile.
+/// @param xscale The tile's horizontal scale.
+/// @param yscale The tile's vertical scale.
+/// @returns 
+}
+__background_get_colour_element.gml: {
+// NOTE: this script will only work properly if you're using the standard depth range (-16000 to 16000)
+}
+__background_get_element.gml: {
+}
+__background_get_internal.gml: {
+}
+__background_set.gml: {
+}
+__background_set_colour.gml: {
+}
+__background_set_element.gml: {
+// NOTE: this script will only work properly if you're using the standard depth range (-16000 to 16000)
+}
+__background_set_internal.gml: {
+}
+__background_set_showcolour.gml: {
+}
+__global_object_depths.gml: {
+// Initialise the global array that allows the lookup of the depth of a given object
+// GM2.0 does not have a depth on objects so on import from 1.x a global array is created
+// NOTE: MacroExpansion is used to insert the array initialisation at import time
+}
+__init_action.gml: {
+}
+__init_background.gml: {
+}
+__init_global.gml: {
+}
+__init_joystick.gml: {
+}
+__init_view.gml: {
+}
+__joystick_2_gamepad.gml: {
+}
+__view_get.gml: {
+}
+__view_set.gml: {
+}
+__view_set_internal.gml: {
+}
+add_log.gml: {
+/// @description  add_log(log_id)
+/// @param log_id
+}
+add_trooper_log.gml: {
+/// @description add_trooper_log(trooperlognum);
+/// @param trooperlognum
+}
+alert.gml: {
+/// @description  alert(text)
+/// @param text
+}
+anim_frame.gml: {
+/// @description  anim_frame(sprite)
+/// @param sprite
+}
+anim_frame_cycle.gml: {
+/// @description  anim_frame_cycle(sprite)
+/// @param sprite
+}
+ApplyLightPreset.gml: {
+/// @description  ApplyLightPreset()
+}
+apply_screenres.gml: {
+/// @description  apply_screenres()
+}
+approximatelyZero.gml: {
+/// @description  approximatelyZero(value)
+/// @param value
+}
+baby_septogg_sprite.gml: {
+//baby_septogg_sprite(x, y);
+}
+beam_offset.gml: {
+/// @description  beam_offset(offset, direction)
+/// @param offset
+/// @param  direction
+}
+calculateCollisionBounds.gml: {
+/// @description  calculateCollisionBounds()
+}
+cdStepSpiderBallOld.gml: {
+/// @description  cdStepSpiderBallOld()
+// As the name suggests, not used.
+}
+characterCreateEvent.gml: {
+/// @description  characterCreateEvent()
+}
+characterDrawEvent.gml: {
+/// @description  characterDrawEvent()
+}
+characterStepEvent.gml: {
+/// @description  characterStepEvent()
+}
+charge_beam_fire.gml: {
+/// @description  charge_beam_fire()
+}
+check_areaclear.gml: {
+/// @description  check_areaclear()
+}
+check_axis.gml: {
+/// @description  check_axis(axis_id)
+/// @param axis_id
+// Could have been much shorter.
+}
+check_cheating.gml: {
+/// @description  check_cheating()
+}
+check_joybtn.gml: {
+/// @description  check_joybtn(joystick_id)
+/// @param joystick_id
+}
+check_keys.gml: {
+/// @description  check_keys()
+// some duplicate code, but fancy.
+}
+check_linkid.gml: {
+/// @description  check_linkid()
+}
+check_xjoybtn.gml: {
+/// @description  check_xjoybtn() droidcode
+// Unlike check_joybtn, only polls the first gamepad for some reason (on Windows).
+}
+choose_axis.gml: {
+/// @description  choose_axis()
+}
+choose_axis_linux.gml: {
+/// @description  choose_axis_linux()
+}
+chStepControl.gml: {
+/// @description  chStepControl()
+}
+chStepFire.gml: {
+/// @description  chStepFire()
+}
+chStepMovingCheck.gml: {
+/// @description  chStepMovingCheck()
+}
+chStepSetSprite.gml: {
+/// @description  chStepSetSprite()
+}
+chStepSpiderBall.gml: {
+/// @description  chStepSpiderBall()
+}
+copy_save.gml: {
+/// @description  copy_save(from, to)
+/// @param from
+/// @param  to
+}
+create_gamma.gml: {
+/// @description  create_gamma(x, y, id, facing)
+/// @param x
+/// @param  y
+/// @param  id
+/// @param  facing
+}
+create_log_category.gml: {
+/// @description  create_log_category(category_id)
+/// @param category_id
+}
+create_log_entry.gml: {
+/// @description  create_log_entry(log_id)
+/// @param log_id
+}
+create_log_label.gml: {
+/// @description  create_log_label(text)
+/// @param text
+}
+create_log_obj.gml: {
+/// @description  create_log_obj(offset, label, text, pic, spacing, log_id)
+/// @param offset
+/// @param  label
+/// @param  text
+/// @param  pic
+/// @param  spacing
+/// @param  log_id
+}
+create_log_trigger.gml: {
+/// @description create_log_arrow(isTrooperLog?, lognum, x, y, yoffset, visible);
+/// @param isTrooperLog?
+/// @param  lognum
+/// @param  x
+/// @param  y
+/// @param  yoffset
+/// @param  visible
+}
+crypt.gml: {
+/// @description  crypt(buffer, encryption_key, rate, retfid?)
+/// @param buffer
+/// @param  encryption_key
+/// @param  rate
+/// @param  retfid?
+// I might have messed up something (game id?) here because 
+// official and recompiled builds don't seem to be compatible.
+}
+ctrl_vibrate.gml: {
+/// @description  ctrl_vibrate()
+}
+damage_player.gml: {
+/// @description  damage_player(damage, knockback_x, knockback_y, ignore_armor, ignore_invincibility)
+/// @param damage
+/// @param  knockback_x
+/// @param  knockback_y
+/// @param  ignore_armor
+/// @param  ignore_invincibility
+}
+damage_player_knockdown.gml: {
+/// @description  damage_player_knockdown(damage, facing, inv_frames, ignore_armor, knockback_x)
+/// @param damage
+/// @param  facing
+/// @param  inv_frames
+/// @param  ignore_armor
+/// @param  knockback_x
+}
+damage_player_push.gml: {
+/// @description  damage_player_push(damage, facing, inv_frames, ignore_armor, knockback_x)
+/// @param damage
+/// @param  facing
+/// @param  inv_frames
+/// @param  ignore_armor
+/// @param  knockback_x
+}
+data_load_extras.gml: {
+/// @description data_load_extras()
+}
+data_sav_extras.gml: {
+/// @description  data_sav_extras()
+}
+debug_draw_var.gml: {
+/// @description  debug_draw_var(name, value)
+/// @param name
+/// @param  value
+}
+debug_draw_var2.gml: {
+/// @description  debug_draw_var2(offset, kind, text)
+/// @param offset
+/// @param  kind
+/// @param  text
+}
+debug_view_1.gml: {
+/// @description  debug_view_1()
+}
+debug_view_2.gml: {
+/// @description  debug_view_2()
+}
+debug_view_events.gml: {
+/// @description  debug_view_events()
+}
+debug_view_items.gml: {
+/// @description  debug_view_items()
+}
+debug_view_metroids.gml: {
+/// @description  debug_view_metroids()
+}
+display_itemmsg.gml: {
+/// @description  display_itemmsg(text1, text2, btn1_name, btn2_name)
+/// @param text1
+/// @param  text2
+/// @param  btn1_name
+/// @param  btn2_name
+}
+draw_character.gml: {
+/// @description  draw_character(sprite, x, y, sprite2, s2ox, s2oy, sprite3, s3ox, s3oy, s3angle, facing, color, alpha, s3show)
+/// @param sprite
+/// @param  x
+/// @param  y
+/// @param  sprite2
+/// @param  s2ox
+/// @param  s2oy
+/// @param  sprite3
+/// @param  s3ox
+/// @param  s3oy
+/// @param  s3angle
+/// @param  facing
+/// @param  color
+/// @param  alpha
+/// @param  s3show
+}
+draw_character_from_surface.gml: {
+/// @description  draw_character_from_surface()
+}
+draw_character_to_surface.gml: {
+/// @description  draw_character_to_surface()
+}
+draw_cool_text.gml: {
+/// @description  draw_cool_text(x, y, text, outline_color, top_color, bottom_color, alpha)
+/// @param x
+/// @param  y
+/// @param  text
+/// @param  outline_color
+/// @param  top_color
+/// @param  bottom_color
+/// @param  alpha
+}
+draw_cool_text_transformed.gml: {
+/// @description  draw_cool_text(x, y, text, outline_color, top_color, bottom_color, alpha, scale)
+/// @param x
+/// @param  y
+/// @param  text
+/// @param  outline_color
+/// @param  top_color
+/// @param  bottom_color
+/// @param  alpha
+/// @param  scale
+}
+draw_game_surface.gml: {
+/// @description  draw_game_surface(x, y, scale)
+/// @param x
+/// @param  y
+/// @param  scale
+}
+draw_gui.gml: {
+/// @description  draw_gui()
+}
+draw_gui2.gml: {
+/// @description  draw_gui()
+}
+draw_gui_map.gml: {
+/// @description  draw_gui_map(x, y)
+/// @param x
+/// @param  y
+}
+draw_mapblock.gml: {
+/// @description  draw_mapblock(x, y, ...parameters)
+/// @param x
+/// @param  y
+/// @param  ...parameters
+}
+draw_map_surf.gml: {
+/// @description  draw_map_surf(x, y)
+/// @param x
+/// @param  y
+// leaks all variables, repositions calling instance..?
+}
+draw_sprite_pixelated.gml: {
+/// @description  draw_sprite_pixelated(sprite, subimg, x, y, xscale, yscale, rot, color, alpha, xpixelscale, ypixelscale, surfsize);
+/// @param sprite
+/// @param  subimg
+/// @param  x
+/// @param  y
+/// @param  xscale
+/// @param  yscale
+/// @param  rot
+/// @param  color
+/// @param  alpha
+/// @param  xpixelscale
+/// @param  ypixelscale
+/// @param  surfsize
+}
+draw_sprite_wave_ext.gml: {
+/// @description  draw_sprite_wave_ext(sprite, image, posx, posy, axis, wavelength, amplitude, phase, xscale, yscale, blend, alpha)
+/// @param sprite
+/// @param  image
+/// @param  posx
+/// @param  posy
+/// @param  axis
+/// @param  wavelength
+/// @param  amplitude
+/// @param  phase
+/// @param  xscale
+/// @param  yscale
+/// @param  blend
+/// @param  alpha
+}
+draw_surface_map.gml: {
+/// @description  draw_surface_map()
+}
+draw_text_shadow.gml: {
+/// @description  draw_text_shadow(x, y, text)
+/// @param x
+/// @param  y
+/// @param  text
+}
+draw_text_shadow_log.gml: {
+/// @description  draw_text_shadow(x, y, text)
+/// @param x
+/// @param  y
+/// @param  text
+}
+draw_txt_1button.gml: {
+/// @description  draw_txt_1button(x, y, text, align, button, alpha)
+/// @param x
+/// @param  y
+/// @param  text
+/// @param  align
+/// @param  button
+/// @param  alpha
+}
+draw_txt_1button_log.gml: {
+/// @description  draw_txt_1button(x, y, text, align, button, alpha)
+/// @param x
+/// @param  y
+/// @param  text
+/// @param  align
+/// @param  button
+/// @param  alpha
+}
+draw_txt_2buttons.gml: {
+/// @description  draw_txt_2buttons(x, y, text, align, button1, button2, alpha)
+/// @param x
+/// @param  y
+/// @param  text
+/// @param  align
+/// @param  button1
+/// @param  button2
+/// @param  alpha
+}
+draw_txt_2buttons_log.gml: {
+/// @description  draw_txt_2buttons(x, y, text, align, button1, button2, alpha)
+/// @param x
+/// @param  y
+/// @param  text
+/// @param  align
+/// @param  button1
+/// @param  button2
+/// @param  alpha
+}
+enemy_active_check.gml: {
+/// @description  enemy_active_check(range)
+/// @param range
+}
+enemy_death.gml: {
+/// @description  enemy_death()
+}
+enemy_death2.gml: {
+/// @description  enemy_death2()
+}
+enemy_death3.gml: {
+/// @description  enemy_death3()
+}
+enemy_death_frozen.gml: {
+/// @description  enemy_death_frozen()
+}
+enemy_target_check.gml: {
+/// @description  enemy_target_check()
+}
+erase_save.gml: {
+/// @description  erase_save()
+}
+font_sizer.gml: {
+/// @description font_sizer(wrongSize)
+/// @param wrongSize
+// Reduces size by 25%.
+}
+getIdCollisionLeft.gml: {
+/// @description  getIdCollisionLeft(offset)
+/// @param offset
+}
+getIdCollisionRight.gml: {
+/// @description  getIdCollisionRight(offset)
+/// @param offset
+}
+get_button_sprite.gml: {
+/// @description  get_button_sprite(button_name)
+/// @param button_name
+}
+get_button_string.gml: {
+/// @description  get_button_string(button_name)
+/// @param button_name
+}
+get_control_joyaxisbtn.gml: {
+/// @description  get_control_joyaxisbtn(index)
+/// @param index
+}
+get_control_keycode.gml: {
+/// @description  get_control_keycode(index)
+/// @param index
+}
+get_control_xjoybtn.gml: {
+/// @description  get_control_xjoybtn(index)
+/// @param index
+}
+get_floor_material.gml: {
+/// @description  get_floor_material()
+// leaks `bl_id`
+}
+get_ground_tile.gml: {
+/// @description get_ground_tile(x, y);
+/// @param x
+/// @param  y
+// Returns the tile from one of the ground layers, or -1 if none found.
+}
+get_joyaxisname.gml: {
+/// @description  get_joyaxisname(axis_id)
+/// @param axis_id
+}
+get_joybtnsprite.gml: {
+/// @description  get_joybtnsprite()
+}
+get_keyname.gml: {
+/// @description  get_keyname()
+// This wasn't very fun to decode.
+}
+get_loadout.gml: {
+/// @description  get_loadout(loadout_id)
+/// @param loadout_id
+}
+get_save_title.gml: {
+/// @description  get_save_title(location)
+/// @param location
+}
+get_suit.gml: {
+/// @description  get_suit()
+}
+get_text.gml: {
+/// @description  get_text(section, key)
+/// @param section
+/// @param  key
+// In theory this is kind of slow but no one will notice.
+}
+get_xjoybtnname.gml: {
+/// @description  get_xjoybtnname(gamepad_button)
+/// @param gamepad_button
+}
+get_xjoybtnsprite.gml: {
+}
+global_control.gml: {
+/// @description  global_control()
+}
+goto_metroid.gml: {
+/// @description  goto_metroid()
+}
+goto_saveroom.gml: {
+/// @description  goto_saveroom()
+}
+gui_health.gml: {
+/// @description  gui_health()
+}
+gui_health2.gml: {
+/// @description  gui_health()
+}
+hdM_change.gml: {
+}
+hd_change.gml: {
+}
+immersion_play_effect.gml: {
+/// @description immersion_play_effect(effectId)
+/// @param effectId
+}
+immersion_stop.gml: {
+/// @description immersion_stop()
+}
+init_bg.gml: {
+/// @description  init_bg(bg_id)
+/// @param bg_id
+}
+init_event_object.gml: {
+/// @description  init_event_object(event_id)
+/// @param event_id
+}
+init_languages.gml: {
+/// @description  init_languages()
+}
+init_map.gml: {
+/// @description  init_map()
+}
+init_metroid_trigger.gml: {
+/// @description  init_metroid_trigger(met_id, facing)
+/// @param met_id
+/// @param  facing
+}
+init_stats.gml: {
+/// @description  init_stats()
+}
+isCollisionBottom.gml: {
+/// @description  isCollisionBottom(offset)
+/// @param offset
+}
+isCollisionCharacterBottom.gml: {
+/// @description  isCollisionCharacterBottom(offset)
+/// @param offset
+}
+isCollisionCharacterLeft.gml: {
+/// @description  isCollisionCharacterLeft(offset)
+/// @param offset
+}
+isCollisionCharacterRight.gml: {
+/// @description  isCollisionCharacterRight(offset)
+/// @param offset
+}
+isCollisionCharacterTop.gml: {
+/// @description  isCollisionCharacterTop(offset)
+/// @param offset
+}
+isCollisionDown.gml: {
+/// @description  isCollisionDown()
+}
+isCollisionEdgeLeft.gml: {
+/// @description  isCollisionEdgeLeft(offset)
+/// @param offset
+}
+isCollisionEdgeRight.gml: {
+/// @description  isCollisionEdgeRight(offset)
+/// @param offset
+}
+isCollisionLadder.gml: {
+/// @description  isCollisionLadder()
+}
+isCollisionLeft.gml: {
+/// @description  isCollisionLeft(offset)
+/// @param offset
+}
+isCollisionLeftSlope.gml: {
+/// @description  isCollisionLeftSlope(offset_0_1)
+/// @param offset_0_1
+}
+isCollisionMoveableSolidLeft.gml: {
+/// @description  isCollisionMoveableSolidLeft(offset)
+/// @param offset
+}
+isCollisionMoveableSolidRight.gml: {
+/// @description  isCollisionMoveableSolidRight(offset)
+/// @param offset
+}
+isCollisionMovingSolidBottom.gml: {
+/// @description  isCollisionMovingSolidBottom(offset)
+/// @param offset
+}
+isCollisionPlatform.gml: {
+/// @description  isCollisionPlatform()
+}
+isCollisionPlatformBottom.gml: {
+/// @description  isCollisionPlatformBottom(offset)
+/// @param offset
+}
+isCollisionRectangle.gml: {
+/// @description  isCollisionRectangle()
+// Checks for collisions between axis-aligned bounding boxes.
+// Used exactly once in entire game..?
+}
+isCollisionRight.gml: {
+/// @description  isCollisionRight(offset)
+/// @param offset
+}
+isCollisionRightSlope.gml: {
+/// @description  isCollisionRightSlope(offset_0_1)
+/// @param offset_0_1
+}
+isCollisionSolid.gml: {
+/// @description  isCollisionSolid()
+}
+isCollisionTop.gml: {
+/// @description  isCollisionTop(offset)
+/// @param offset
+}
+isCollisionUnmorph.gml: {
+/// @description  isCollisionUnmorph()
+}
+isCollisionUpLeft.gml: {
+/// @description  isCollisionUpLeft()
+}
+isCollisionUpRight.gml: {
+/// @description  isCollisionUpRight()
+}
+is_breakable_block.gml: {
+/// @description is_breakable_block(id);
+/// @param id
+//Returns if the solid is of the breakable type.
+}
+is_past_deadzone.gml: {
+/// @description  is_past_deadzone(xvalue, yvalue, use_opdeadzone)
+/// @param xvalue
+/// @param  yvalue
+/// @param  use_opdeadzone
+}
+is_walkzone.gml: {
+/// @description  is_walkzone(xvalue, yvalue, use_opdeadzone)
+/// @param xvalue
+/// @param  yvalue
+/// @param  use_opdeadzone
+}
+link_surface_tile.gml: {
+/// @description  link_surface_tile(x, y)
+/// @param x
+/// @param  y
+}
+link_tile.gml: {
+/// @description  link_tile(background, x, y)
+/// @param background
+/// @param  x
+/// @param  y
+}
+linux_keys.gml: {
+/// @description  bluetooth_keys()
+}
+load_bgset.gml: {
+/// @description  load_bgset(bg_id)
+/// @param bg_id
+}
+load_character_vars.gml: {
+/// @description  load_character_vars()
+}
+load_game.gml: {
+/// @description  load_game(path)
+/// @param path
+}
+load_gameoptions.gml: {
+/// @description  load_gameoptions()
+}
+load_logs.gml: {
+/// @description  load_logs()
+// the contents of the script were mirroring english.ini and never used.
+}
+load_logs_list.gml: {
+/// @description  load_logs_list()
+}
+load_resources.gml: {
+}
+load_stats.gml: {
+/// @description  load_stats()
+}
+load_stats2.gml: {
+/// @description  load_stats()
+}
+load_timeofday_bgs.gml: {
+/// @description  load_timeofday_bgs(time_id)
+/// @param time_id
+}
+LoopSoundMono.gml: {
+/// @description  LoopSoundMono(sound)
+/// @param sound
+}
+macros.gml: {
+}
+makeActive.gml: {
+/// @description  makeActive()
+}
+make_deep_water.gml: {
+/// @description  make_deep_water()
+}
+make_escape_explosion.gml: {
+/// @description  make_escape_explosion()
+}
+make_escape_sequence_fx.gml: {
+/// @description  make_escape_sequence_fx(phase)
+/// @param phase
+}
+make_explosion1.gml: {
+/// @description  make_explosion1(x, y)
+/// @param x
+/// @param  y
+}
+make_explosion1big.gml: {
+/// @description  make_explosion1big(x, y)
+/// @param x
+/// @param  y
+}
+make_explosion2.gml: {
+/// @description  make_explosion2(x, y)
+/// @param x
+/// @param  y
+}
+make_explosion3.gml: {
+/// @description  make_explosion3(x, y)
+/// @param x
+/// @param  y
+}
+make_explosion4.gml: {
+/// @description  make_explosion4(x, y)
+/// @param x
+/// @param  y
+}
+make_liquid.gml: {
+/// @description  make_liquid(type, level, unknown, wave?, wspeed, wheight, _dlayer)
+/// @param type
+/// @param  level
+/// @param  unknown
+/// @param  wave?
+/// @param  wspeed
+/// @param  wheight
+/// @param  _dlayer
+}
+make_maptile.gml: {
+}
+make_notification.gml: {
+/// @description  make_notification(text1, text2, delay, btn1, btn2)
+/// @param text1
+/// @param  text2
+/// @param  delay
+/// @param  btn1
+/// @param  btn2
+}
+make_smoke_explosion.gml: {
+/// @description  make_smoke_explosion(x, y)
+/// @param x
+/// @param  y
+}
+make_smoke_explosion2.gml: {
+/// @description  make_smoke_explosion2(x, y)
+/// @param x
+/// @param  y
+}
+map_draw_01.gml: {
+/// @description  map_draw_01()
+}
+map_draw_02.gml: {
+/// @description  map_draw_02()
+}
+map_draw_03.gml: {
+/// @description  map_draw_03()
+}
+map_draw_04.gml: {
+/// @description  map_draw_04()
+}
+map_draw_05.gml: {
+/// @description  map_draw_05()
+}
+map_draw_06.gml: {
+/// @description  map_draw_06()
+}
+map_draw_07.gml: {
+/// @description  map_draw_07()
+}
+map_draw_08.gml: {
+/// @description  map_draw_08()
+}
+map_draw_09.gml: {
+/// @description  map_draw_09()
+}
+map_draw_10.gml: {
+/// @description  map_draw_10()
+}
+map_draw_11.gml: {
+/// @description  map_draw_11()
+}
+map_draw_12.gml: {
+/// @description  map_draw_12()
+}
+map_draw_13.gml: {
+/// @description  map_draw_13()
+}
+map_draw_14.gml: {
+/// @description  map_draw_14()
+}
+map_draw_15.gml: {
+/// @description  map_draw_15()
+}
+map_draw_16.gml: {
+/// @description  map_draw_16()
+}
+map_draw_17.gml: {
+/// @description  map_draw_17()
+}
+map_init_01.gml: {
+/// @description  map_init_01()
+}
+map_init_02.gml: {
+/// @description  map_init_02()
+}
+map_init_03.gml: {
+/// @description  map_init_03()
+}
+map_init_04.gml: {
+/// @description  map_init_04()
+}
+map_init_05.gml: {
+/// @description  map_init_05()
+}
+map_init_06.gml: {
+/// @description  map_init_06()
+}
+map_init_07.gml: {
+/// @description  map_init_07()
+}
+map_init_08.gml: {
+/// @description  map_init_08()
+}
+map_init_09.gml: {
+/// @description  map_init_09()
+}
+map_init_10.gml: {
+/// @description  map_init_10()
+}
+map_init_11.gml: {
+/// @description  map_init_11()
+}
+map_init_12.gml: {
+/// @description  map_init_12()
+}
+map_init_13.gml: {
+/// @description  map_init_13()
+}
+map_init_14.gml: {
+/// @description  map_init_14()
+}
+map_init_15.gml: {
+/// @description  map_init_15()
+}
+map_init_16.gml: {
+/// @description  map_init_16()
+}
+map_init_17.gml: {
+/// @description  map_init_17()
+}
+map_joyaxisbtn.gml: {
+/// @description  map_joyaxisbtn(joybtn_index)
+/// @param joybtn_index
+}
+map_kbkey.gml: {
+/// @description  map_kbkey(key_index)
+/// @param key_index
+// This might have been a switch() block originally.
+}
+map_xjoybtn.gml: {
+/// @description  map_xjoybtn(gamepad_button_index)
+/// @param gamepad_button_index
+}
+metroid_spawn_powerups.gml: {
+/// @description  metroid_spawn_powerups(x, y, num_hp, num_missile)
+/// @param x
+/// @param  y
+/// @param  num_hp
+/// @param  num_missile
+}
+mod_changes.gml: {
+}
+mod_changes_2.gml: {
+//Must check for absolute value here first. Could cheat otherwise.
+}
+mod_wat_scr.gml: {
+}
+moveTo.gml: {
+/// @description  moveTo(offset_x, offset_y)
+/// @param offset_x
+/// @param  offset_y
+}
+mus_alpha_metroid.gml: {
+/// @description  mus_alpha_metroid()
+}
+mus_boss_fadein.gml: {
+/// @description  mus_current_fadein(sound)
+/// @param sound
+}
+mus_change.gml: {
+/// @description  mus_change(sound)
+/// @param sound
+}
+mus_change_itemroom.gml: {
+}
+mus_current_fadein.gml: {
+/// @description  mus_current_fadein(sound)
+/// @param sound
+}
+mus_current_fadeout.gml: {
+/// @description  mus_current_fadeout(sound)
+/// @param sound
+}
+mus_current_stop.gml: {
+/// @description  mus_current_stop()
+}
+mus_current_update_volume.gml: {
+/// @description  mus_current_update_volume()
+}
+mus_fadeout.gml: {
+/// @description  mus_fadeout(sound)
+/// @param sound
+}
+mus_gamma_metroid.gml: {
+/// @description  mus_gamma_metroid()
+}
+mus_get_main_song.gml: {
+/// @description  mus_get_main_song()
+}
+mus_intro_fanfare.gml: {
+/// @description  mus_intro_fanfare()
+}
+mus_loop.gml: {
+/// @description  mus_loop(sound)
+/// @param sound
+}
+mus_omega_metroid.gml: {
+/// @description  mus_omega_metroid()
+}
+mus_pause.gml: {
+/// @description  mus_pause(sound)
+/// @param sound
+}
+mus_play.gml: {
+/// @description  mus_play(sound)
+/// @param sound
+}
+mus_play_once.gml: {
+/// @description  mus_play_once(sound)
+/// @param sound
+}
+mus_resume.gml: {
+/// @description  mus_resume(sound)
+/// @param sound
+}
+mus_set_current.gml: {
+/// @description  mus_set_current(sound)
+/// @param sound
+}
+mus_stop.gml: {
+/// @description  mus_stop(sound)
+/// @param sound
+}
+mus_stop_all.gml: {
+/// @description  mus_stop_all()
+}
+mus_stop_muted.gml: {
+/// @description  mus_stop_muted()
+}
+mus_stop_non_current.gml: {
+/// @description  mus_stop_non_current()
+}
+mus_zeta_metroid.gml: {
+/// @description  mus_zeta_metroid()
+}
+Mute_Loops.gml: {
+/// @description  Mute_Loops()
+}
+negative_color.gml: {
+/// @description  negative_color(color)
+/// @param color
+}
+pal_swap_init_system.gml: {
+/// @description  pal_swap_init_system(shader)
+/// @param shader
+}
+pal_swap_set.gml: {
+/// @description pal_swap_set(palette_sprite_index, palette_index,palette is surface);
+/// @param palette_sprite_index
+/// @param  palette_index
+/// @param palette is surface
+}
+platformCharacterIs.gml: {
+/// @description  platformCharacterIs()
+}
+PlayFootstep.gml: {
+/// @description  PlayFootstep(material)
+/// @param material
+}
+PlayLandingSound.gml: {
+/// @description  PlayLandingSound(material)
+/// @param material
+}
+PlaySoundMono.gml: {
+/// @description  PlaySoundMono(sound)
+/// @param sound
+}
+PlaySoundVisible.gml: {
+/// @description  PlaySoundVisible(sound, x, y)
+/// @param sound
+/// @param  x
+/// @param  y
+}
+play_septogg_sound.gml: {
+}
+popup_text.gml: {
+/// @description  popup_text(text)
+/// @param text
+}
+randomize_omega_types.gml: {
+/// @description randomize_omega_types();
+}
+randomize_zeta_heads.gml: {
+/// @description randomize_zeta_heads();
+}
+rc4.gml: {
+/// @description  rc4()
+// https://en.wikipedia.org/wiki/RC4
+}
+readline.gml: {
+/// @description  readline()
+}
+refill_heath_ammo.gml: {
+/// @description  refill_heath_ammo()
+}
+remap_duplicate_joyaxis.gml: {
+/// @description  remap_duplicate_joyaxis()
+}
+remap_duplicate_joybtn.gml: {
+/// @description  remap_duplicate_joybtn(index)
+/// @param index
+}
+remap_duplicate_joybtnmenu.gml: {
+/// @description  remap_duplicate_joybtnmenu(index)
+/// @param index
+}
+remap_duplicate_kbkey.gml: {
+/// @description  remap_duplicate_kbkey(key)
+/// @param key
+}
+remap_duplicate_kbkeymenu.gml: {
+/// @description  remap_duplicate_kbkeymenu(key)
+/// @param key
+}
+remap_duplicate_xjoybtn.gml: {
+/// @description  remap_duplicate_xjoybtn(index)
+/// @param index
+}
+remap_duplicate_xjoybtnmenu.gml: {
+/// @description  remap_duplicate_xjoybtnmenu(index)
+/// @param index
+}
+remove_persistent_objects.gml: {
+/// @description  remove_persistent_objects()
+}
+ResetAmb_Enemies.gml: {
+/// @description  ResetAmb_Enemies()
+}
+ResetAmb_Metroids.gml: {
+/// @description  ResetAmb_Metroids()
+}
+ResetAmb_Player.gml: {
+/// @description  ResetAmb_Player()
+}
+ResetAmb_Weapons.gml: {
+/// @description  ResetAmb_Weapons()
+}
+reset_hints.gml: {
+/// @description  reset_hints()
+}
+reset_logs.gml: {
+/// @description  reset_logs()
+}
+reset_logs_list.gml: {
+/// @description  reset_logs_list()
+}
+reset_map.gml: {
+/// @description  reset_map()
+}
+room_change.gml: {
+/// @description  room_change(target_room, transition_type)
+/// @param target_room
+/// @param  transition_type
+}
+saveslot_flash.gml: {
+/// @description  saveslot_flash(index)
+/// @param index
+}
+save_game.gml: {
+/// @description  save_game(path)
+/// @param path
+}
+save_gameoptions.gml: {
+/// @description  save_gameoptions()
+}
+save_modifiers.gml: {
+/// @description  save_modifiers();
+}
+save_stats.gml: {
+/// @description  save_stats()
+}
+save_stats2.gml: {
+/// @description  save_stats()
+}
+scan_log.gml: {
+/// @description  scan_log(log_id, text, delay, mode)
+/// @param log_id
+/// @param  text
+/// @param  delay
+/// @param  mode
+}
+scan_metroids.gml: {
+/// @description  scan_metroids(amount, event_id)
+/// @param amount
+/// @param  event_id
+}
+scrDraw_chain.gml: {
+/// @description  scrDraw_chain(sprite, subimg, x1, y1, x2, y2)
+/// @param sprite
+/// @param  subimg
+/// @param  x1
+/// @param  y1
+/// @param  x2
+/// @param  y2
+// leaks `i` variable into calling instance - not intended?
+}
+screen_shake.gml: {
+/// @description  screen_shake(duration, intensity)
+/// @param duration
+/// @param  intensity
+}
+scr_arraymaker.gml: {
+/// @description scr_arraymaker(...)
+/// @param ...
+}
+scr_async_group.gml: {
+/// @description scr_async_group()
+}
+scr_controller_N.gml: {
+/// @description  get_xjoybtnname(gamepad_button)
+/// @param gamepad_button
+}
+scr_controller_ps.gml: {
+/// @description  get_xjoybtnname(gamepad_button)
+/// @param gamepad_button
+}
+scr_controller_xbox.gml: {
+/// @description  get_xjoybtnname(gamepad_button)
+/// @param gamepad_button
+}
+scr_default_global_items.gml: {
+//This script seems to be called excessively on program start.
+//Randomizer will take over and act weird otherwise.
+}
+scr_default_maprandom.gml: {
+}
+scr_disableplayercontrol.gml: {
+}
+scr_energytank_character_event.gml: {
+}
+scr_energytank_create.gml: {
+}
+scr_file_copy.gml: {
+/// @description scr_file_copy(f1, f2)
+/// @param f1
+/// @param  f2
+}
+scr_file_delete.gml: {
+/// @description scr_file_delete(fname)
+/// @param fname
+}
+scr_file_exists.gml: {
+/// @description scr_file_exists(fname)
+/// @param fname
+}
+scr_fixitem.gml: {
+}
+scr_fixitem_encrypted.gml: {
+/// @description  scr_fixitem_encrypted(original_item, item_location)
+/// @param original_item
+/// @param  item_location
+}
+scr_fixitem_switch.gml: {
+}
+scr_flush.gml: {
+/// @description scr_flush()
+}
+scr_init_listeners.gml: {
+/// @description scr_init_listeners()
+}
+scr_ini_close.gml: {
+/// @description scr_ini_close()
+}
+scr_ini_open.gml: {
+/// @description scr_ini_open(fname)
+/// @param fname
+}
+scr_ini_write.gml: {
+// Item = Location - This is how qerty.ini lists items.
+}
+scr_itemchange.gml: {
+}
+scr_itemsmenu_original.gml: {
+}
+scr_itemsmenu_swap.gml: {
+}
+scr_itemsopen.gml: {
+}
+scr_item_character_event.gml: {
+}
+scr_item_create_text.gml: {
+}
+scr_loaderset.gml: {
+/// @description scr_loaderset(fname,contents)
+/// @param fname
+/// @param contents
+}
+scr_load_items.gml: {
+}
+scr_load_mods.gml: {
+}
+scr_load_undefined.gml: {
+}
+scr_logic_bomb_shuffle.gml: {
+}
+scr_logic_misc.gml: {
+/// @description scr_logic_misc(check_bombs,bombs_var,check_PB,PB_var,check_SB,SB_var,check_SJ,SJ_var)
+/// @param check_bombs
+/// @param bombs_var
+/// @param check_PB
+/// @param PB_var
+/// @param check_SB
+/// @param SB_var
+/// @param check_SJ
+/// @param SJ_var
+//check_bombs = 0
+//bombs_var = 1
+//check_PB = 2
+//PB_var = 3
+//check_SB = 4
+//SB_var = 5
+//check_SJ = 6
+//SJ_var = 7
+}
+scr_logic_PB_shuffle.gml: {
+}
+scr_logic_SB_shuffle.gml: {
+}
+scr_logic_SB_wall.gml: {
+/// @description scr_logic_SB_wall(true_SpaceJump, true_gravity, true_screw_attack, true_spider, true_springball)
+/// @param true_SpaceJump
+/// @param  true_gravity
+/// @param  true_screw_attack
+/// @param  true_spider
+/// @param  true_springball
+}
+scr_logic_SJ_shuffle.gml: {
+}
+scr_makebuffer.gml: {
+/// @description scr_makebuffer(string)
+/// @param string
+}
+scr_missile_character_event.gml: {
+}
+scr_missile_create.gml: {
+}
+scr_mouse_gui_x.gml: {
+/// @description  scr_mouse_gui_x(mouse_x)
+/// @param mouse_x
+}
+scr_mouse_gui_y.gml: {
+/// @description  scr_mouse_gui_y(mouse_y)
+/// @param mouse_y
+}
+scr_newgame.gml: {
+}
+scr_NSwitch_Init.gml: {
+/// @description scr_NSwitch_Init()
+}
+scr_powerbomb_character_event.gml: {
+}
+scr_powerbomb_create.gml: {
+}
+scr_PSVita_YYC_Exit.gml: {
+/// @description scr_PSVita_YYC_Exit()
+// You're supposed to manually edit this file and add:
+// sceKernelExitProcess(0) so the game would properly quit.
+}
+scr_PU.gml: {
+}
+scr_PUorET.gml: {
+}
+scr_queue_file.gml: {
+/// @description scr_queue_file(array,len)
+/// @param array
+/// @param len
+}
+scr_quickread.gml: {
+/// @description scr_quickread(path)
+/// @param path
+// Please only use this script on PC and on consoles inside the app folder, not savedata.
+}
+scr_randomizer.gml: {
+}
+scr_randomizer_bombs.gml: {
+}
+scr_randomizer_encrypted.gml: {
+}
+scr_randomizer_items.gml: {
+}
+scr_randomizer_junk.gml: {
+//Powerups
+}
+scr_randomizer_powerbombs.gml: {
+}
+scr_randomizer_pure.gml: {
+}
+scr_randomizer_pure_area2.gml: {
+}
+scr_randomizer_pure_vars.gml: {
+//not all these variables used.
+}
+scr_randomizer_pure_wall.gml: {
+}
+scr_randomizer_read.gml: {
+//This script should not be used anymore!
+}
+scr_randomizer_screwattack.gml: {
+}
+scr_randomizer_split_items.gml: {
+}
+scr_random_draw_111.gml: {
+}
+scr_random_draw_112.gml: {
+//changed 1.4.4
+}
+scr_random_draw_gravity.gml: {
+}
+scr_random_draw_gravity_spider.gml: {
+}
+scr_random_draw_pool.gml: {
+}
+scr_random_draw_screw.gml: {
+}
+scr_random_draw_spider.gml: {
+}
+scr_random_draw_spider_spring_space_111.gml: {
+}
+scr_random_draw_spider_spring_space_112.gml: {
+}
+scr_rand_encrypt_read.gml: {
+}
+scr_rand_encrypt_write.gml: {
+}
+scr_rand_split_powerups.gml: {
+}
+scr_septoggs_02467.gml: {
+/// @description Relocate Septoggs?
+//Septoggs cannot be destroyed. GM will throw an error
+}
+scr_septoggs_246.gml: {
+/// @description Relocate Septoggs?
+//Septoggs cannot be destroyed. GM will throw an error
+}
+scr_septoggs_2467.gml: {
+/// @description Relocate Septoggs?
+//Septoggs cannot be destroyed. GM will throw an error
+}
+scr_septoggs_2468.gml: {
+/// @description Relocate Septoggs?
+//Septoggs cannot be destroyed. GM will throw an error
+}
+scr_septoggs_26.gml: {
+/// @description Relocate Septoggs?
+//Septoggs cannot be destroyed. GM will throw an error
+}
+scr_septoggs_267.gml: {
+/// @description Relocate Septoggs?
+//Septoggs cannot be destroyed. GM will throw an error
+}
+scr_septoggs_46.gml: {
+/// @description Relocate Septoggs?
+//Septoggs cannot be destroyed. GM will throw an error
+}
+scr_septoggs_48.gml: {
+/// @description Relocate Septoggs?
+//Septoggs cannot be destroyed. GM will throw an error
+}
+scr_septoggs_67.gml: {
+/// @description Relocate Septoggs?
+//Septoggs cannot be destroyed. GM will throw an error
+}
+scr_shader_control.gml: {
+}
+scr_skreeks_destroy.gml: {
+}
+scr_speedbooster_wall.gml: {
+}
+scr_SubScrTop_swap.gml: {
+}
+scr_SubScrTop_swap2.gml: {
+}
+scr_suit_sprites.gml: {
+/// @description scr_suit_sprites(orginal_suit,fusion_suit)
+/// @param orginal_suit
+/// @param fusion_suit
+}
+scr_supermissile_character_event.gml: {
+}
+scr_supermissile_create.gml: {
+}
+scr_swappables.gml: {
+//Not used. Probably wrong v1.4
+}
+scr_update_listeners.gml: {
+/// @description scr_update_listeners()
+}
+scr_variasuitswap.gml: {
+}
+scr_writeln.gml: {
+/// @description scr_writeln(buffer)
+/// @param buffer
+}
+septogg_particle_sprite.gml: {
+//septogg_particle_sprite();
+}
+SetAmb_Enemies.gml: {
+/// @description  SetAmb_Enemies()
+}
+SetAmb_Metroids.gml: {
+/// @description  SetAmb_Metroids()
+}
+SetAmb_Player.gml: {
+/// @description  SetAmb_Player()
+}
+SetAmb_Weapons.gml: {
+/// @description  SetAmb_Weapons()
+}
+setCollisionBounds.gml: {
+/// @description  setCollisionBounds(left, top, right, bottom)
+/// @param left
+/// @param  top
+/// @param  right
+/// @param  bottom
+}
+SetSoundAmb.gml: {
+/// @description  SetSoundAmb()
+// This likely had some commented out code in it.
+}
+SetSpinJumpSound.gml: {
+/// @description  SetSpinJumpSound()
+}
+set_8bit_shader.gml: {
+// Activate Shader.
+}
+set_default_joypad.gml: {
+/// @description  set_default_joypad()
+}
+set_default_keys.gml: {
+/// @description  set_default_keys()
+}
+set_default_xjoypad.gml: {
+/// @description  set_default_xjoypad()
+}
+set_eventstate.gml: {
+/// @description  set_eventstate()
+}
+set_fullscreen.gml: {
+/// @description  set_fullscreen(enable)
+/// @param enable
+}
+set_itemstate.gml: {
+/// @description  set_itemstate()
+}
+set_lavalevel.gml: {
+/// @description  set_lavalevel()
+}
+set_metroidstate.gml: {
+/// @description  set_metroidstate()
+}
+set_metroid_vars.gml: {
+/// @description  set_metroid_vars(met_id)
+/// @param met_id
+}
+set_start_location.gml: {
+/// @description  set_start_location()
+}
+set_widescreen.gml: {
+/// @description  set_widescreen();
+//if(widescreen) {
+}
+set_window_scale.gml: {
+/// @description  set_window_scale(scale)
+/// @param scale
+}
+sfx_fadeout_quick.gml: {
+/// @description  sfx_fadeout_quick(sound)
+/// @param sound
+}
+sfx_isplaying.gml: {
+/// @description  sfx_isplaying(sound)
+/// @param sound
+}
+sfx_loop.gml: {
+/// @description  sfx_loop(sound)
+/// @param sound
+}
+sfx_play.gml: {
+/// @description  sfx_play(sound)
+/// @param sound
+}
+sfx_play_single.gml: {
+/// @description  sfx_play_single(sound)
+/// @param sound
+// Prevents sound stacking?
+}
+sfx_stop.gml: {
+/// @description  sfx_stop(sound)
+/// @param sound
+}
+sfx_stop_all.gml: {
+/// @description  sfx_stop_all()
+}
+sfx_stop_loops.gml: {
+/// @description  sfx_stop_loops()
+}
+shoot_beam.gml: {
+/// @description  shoot_beam(direction)
+/// @param direction
+}
+shoot_missile.gml: {
+/// @description  shoot_missile(direction)
+/// @param direction
+}
+show_all_map.gml: {
+/// @description  show_all_map()
+}
+skorp_get_lure.gml: {
+/// @description  skorp_get_lure(sprite);
+/// @param sprite
+}
+SoundFX_Preset.gml: {
+/// @description  SoundFX_Preset(ambient_id)
+/// @param ambient_id
+}
+spawn_many_powerups.gml: {
+/// @description  spawn_many_powerups(region_x, region_y, region__width, region_height)
+/// @param region_x
+/// @param  region_y
+/// @param  region__width
+/// @param  region_height
+}
+spawn_many_powerups_tank.gml: {
+/// @description  spawn_many_powerups(region_x, region_y, region__width, region_height)
+/// @param region_x
+/// @param  region_y
+/// @param  region__width
+/// @param  region_height
+}
+spawn_random_septogg.gml: {
+/// @description  spawn_random_septogg(percent of solids to check, number to spawn, spawn chance (out of 99));
+/// @param percent of solids to check
+/// @param  number to spawn
+/// @param  spawn chance (out of 99
+// This script attempts to find proper, random locations to spawn small Septoggs. It does not guarantee any will be spawned. Should be used in a Room Start event for best results.
+}
+spawn_rnd_pickup.gml: {
+/// @description  spawn_rnd_pickup(chance)
+/// @param chance
+}
+spawn_rnd_pickup_at.gml: {
+/// @description  spawn_rnd_pickup_at(x, y, chance)
+/// @param x
+/// @param  y
+/// @param  chance
+}
+spawn_scavenger_septogg.gml: {
+// Spawn Septogg based on area.
+}
+spawn_thoth_septoggs.gml: {
+}
+src_items_rando.gml: {
+}
+start_new_game.gml: {
+/// @description  start_new_game()
+}
+steps_to_time.gml: {
+/// @description  steps_to_time(steps)
+/// @param steps
+// Converts a number of steps into "mm:ss.f" format
+}
+steps_to_time2.gml: {
+/// @description  steps_to_time2(steps)
+/// @param steps
+// Converts a number of steps into "hh:mm:ss" format.
+}
+StopAmbLoops.gml: {
+/// @description  StopAmbLoops()
+}
+string_split.gml: {
+/// @description  string_split()
+}
+sv6_add_events.gml: {
+/// @description  sv6_add_events()
+}
+sv6_add_eventsA0.gml: {
+/// @description  sv6_add_eventsA0()
+}
+sv6_add_eventsA1.gml: {
+/// @description  sv6_add_eventsA1()
+}
+sv6_add_eventsA2.gml: {
+/// @description  sv6_add_eventsA2()
+}
+sv6_add_eventsA3.gml: {
+/// @description  sv6_add_eventsA3()
+}
+sv6_add_eventsA4.gml: {
+/// @description  sv6_add_eventsA4()
+}
+sv6_add_eventsA5.gml: {
+/// @description  sv6_add_eventsA5()
+}
+sv6_add_eventsA6.gml: {
+/// @description  sv6_add_eventsA6()
+}
+sv6_add_eventsA7.gml: {
+/// @description  sv6_add_eventsA7()
+}
+sv6_add_hints.gml: {
+/// @description  sv6_add_hints()
+}
+sv6_add_inventory.gml: {
+/// @description  sv6_add_inventory()
+}
+sv6_add_items.gml: {
+/// @description  sv6_add_items()
+}
+sv6_add_itemsA0.gml: {
+/// @description  sv6_add_itemsA0()
+}
+sv6_add_itemsA1.gml: {
+/// @description  sv6_add_itemsA1()
+}
+sv6_add_itemsA2.gml: {
+/// @description  sv6_add_itemsA2()
+}
+sv6_add_itemsA3.gml: {
+/// @description  sv6_add_itemsA3()
+}
+sv6_add_itemsA4.gml: {
+/// @description  sv6_add_itemsA4()
+}
+sv6_add_itemsA5.gml: {
+/// @description  sv6_add_itemsA5()
+}
+sv6_add_itemsA6.gml: {
+/// @description  sv6_add_itemsA6()
+}
+sv6_add_itemsA7.gml: {
+/// @description  sv6_add_itemsA7()
+}
+sv6_add_logs.gml: {
+/// @description  sv6_add_logs()
+}
+sv6_add_main.gml: {
+/// @description  sv6_add_main()
+}
+sv6_add_map.gml: {
+/// @description  sv6_add_map()
+}
+sv6_add_metroids.gml: {
+/// @description  sv6_add_metroids()
+}
+sv6_add_seed.gml: {
+//sv6_add_seed();
+}
+sv6_add_suit_items.gml: {
+/// @description  sv6_add_suit_items()
+}
+sv6_add_trooper_logs.gml: {
+/// @description  sv6_add_logs()
+}
+sv6_get_events.gml: {
+/// @description  sv6_get_events()
+}
+sv6_get_eventsA0.gml: {
+/// @description  sv6_get_eventsA0()
+}
+sv6_get_eventsA1.gml: {
+/// @description  sv6_get_eventsA1()
+}
+sv6_get_eventsA2.gml: {
+/// @description  sv6_get_eventsA2()
+}
+sv6_get_eventsA3.gml: {
+/// @description  sv6_get_eventsA3()
+}
+sv6_get_eventsA4.gml: {
+/// @description  sv6_get_eventsA4()
+}
+sv6_get_eventsA5.gml: {
+/// @description  sv6_get_eventsA5()
+}
+sv6_get_eventsA6.gml: {
+/// @description  sv6_get_eventsA6()
+}
+sv6_get_eventsA7.gml: {
+/// @description  sv6_get_eventsA7()
+}
+sv6_get_hints.gml: {
+/// @description  sv6_get_hints()
+}
+sv6_get_inventory.gml: {
+/// @description  sv6_get_inventory()
+}
+sv6_get_items.gml: {
+/// @description  sv6_get_items()
+}
+sv6_get_itemsA0.gml: {
+/// @description  sv6_get_itemsA0()
+}
+sv6_get_itemsA1.gml: {
+/// @description  sv6_get_itemsA1()
+}
+sv6_get_itemsA2.gml: {
+/// @description  sv6_get_itemsA2()
+}
+sv6_get_itemsA3.gml: {
+/// @description  sv6_get_itemsA3()
+}
+sv6_get_itemsA4.gml: {
+/// @description  sv6_get_itemsA4()
+}
+sv6_get_itemsA5.gml: {
+/// @description  sv6_get_itemsA5()
+}
+sv6_get_itemsA6.gml: {
+/// @description  sv6_get_itemsA6()
+}
+sv6_get_itemsA7.gml: {
+/// @description  sv6_get_itemsA7()
+}
+sv6_get_logs.gml: {
+/// @description  sv6_get_logs()
+}
+sv6_get_main.gml: {
+/// @description  sv6_get_main()
+}
+sv6_get_map.gml: {
+/// @description  sv6_get_map()
+}
+sv6_get_metroids.gml: {
+/// @description  sv6_get_metroids()
+}
+sv6_get_random.gml: {
+/// @description  sv6_get_random()
+}
+sv6_get_seed.gml: {
+//sv6_get_seed();
+}
+sv6_get_suit_items.gml: {
+/// @description  sv6_get_suit_items()
+}
+sv6_get_trooper_logs.gml: {
+/// @description  sv6_get_logs()
+}
+sv6_load.gml: {
+/// @description  sv6_load(filename)
+/// @param filename
+}
+sv6_load_details.gml: {
+/// @description  sv6_load_details()
+}
+sv6_randomizer.gml: {
+/// @description  sv6_add_main()
+}
+sv6_save.gml: {
+/// @description  sv6_save()
+// I suggest that you don't touch this entire folder
+// of scripts for sake of your own sanity.
+}
+sv_add_achievements.gml: {
+/// @description  sv_add_achievements()
+}
+sv_add_gallery.gml: {
+/// @description  sv_add_gallery()
+}
+sv_add_stats.gml: {
+/// @description  sv_add_stats()
+}
+sv_add_unlocks.gml: {
+/// @description  sv_add_unlocks()
+}
+sv_get_achievements.gml: {
+/// @description  sv_get_achievements()
+}
+sv_get_gallery.gml: {
+/// @description  sv_get_gallery()
+}
+sv_get_stats.gml: {
+/// @description  sv_get_stats()
+}
+sv_get_unlocks.gml: {
+/// @description  sv_get_unlocks()
+}
+touch_keys.gml: {
+/// @description  bluetooth_keys()
+}
+to_string_lz.gml: {
+/// @description  to_string_lz(number)
+/// @param number
+// 4 -> "04"
+// 11 -> "11"
+}
+turn_towards_direction.gml: {
+/// @description  turn_towards_direction(direction, turnspeed)
+/// @param direction
+/// @param  turnspeed
+}
+unlock_gallery.gml: {
+/// @description  unlock_gallery(index)
+/// @param index
+}
+unlock_set.gml: {
+/// @description  unlock_set(index)
+/// @param index
+}
+Unmute_Loops.gml: {
+/// @description  Unmute_Loops()
+}
+update_log.gml: {
+/// @description  update_log(log_id)
+/// @param log_id
+}
+writeline.gml: {
+/// @description  writeline(value)
+/// @param value
+}
+writelog.gml: {
+/// @description  writelog(text)
+/// @param text
+}
